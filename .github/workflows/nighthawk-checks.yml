@@ -7,6 +7,9 @@ on:
   pull_request:
 
 jobs:
+  permissions:
+    contents: read
+    packages: read
   check:
     runs-on: envoy-x64-medium
     strategy:
