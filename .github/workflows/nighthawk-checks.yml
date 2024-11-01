@@ -24,3 +24,5 @@ jobs:
             --config=remote-envoy-engflow \
             --@envoy//tools/cat:target=//:hello \
             @envoy//tools/cat
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
