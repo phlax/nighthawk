@@ -7,10 +7,10 @@ on:
   pull_request:
 
 jobs:
-  permissions:
-    contents: read
-    packages: read
   check:
+    permissions:
+      contents: read
+      packages: read
     runs-on: envoy-x64-medium
     strategy:
       fail-fast: false
